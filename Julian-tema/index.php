@@ -1,7 +1,16 @@
+<!DOCTYPE html>
+<html>
+   
+<body>
+   
 
 <?php get_header(); ?>
-<?php echo '<p>Hola Mundo </p>'; ?>
+
+
+
+<h1>Entradas</h1>
 <?php 
+
 
 if (have_posts()) :
    while (have_posts()) :
@@ -11,7 +20,14 @@ if (have_posts()) :
 endif;
 echo "Listo"
 ?>
+
+<h4>Sidebar</h4>
+<?php get_sidebar(); ?>
 </br
+
+
+
+
 
 <h2 id="post-<?php the_ID(); ?>">
 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
@@ -21,3 +37,5 @@ echo "Listo"
 
 
 <?php get_footer(); ?>
+</body>
+</html>
