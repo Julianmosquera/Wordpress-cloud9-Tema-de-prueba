@@ -27,7 +27,12 @@ echo "Listo"
 
 
 
-
+  <h1>Menu</h1>
+       <?php wp_nav_menu(
+           array(
+            'menu' => 'menu2'
+        )
+        ); ?>
 
 <h2 id="post-<?php the_ID(); ?>">
 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">

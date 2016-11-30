@@ -7,6 +7,7 @@
        <?php wp_nav_menu(
            array(
             'menu' => 'menu2'
-        ) ); ?>
+        )
+        ); ?>
             
     </html>
