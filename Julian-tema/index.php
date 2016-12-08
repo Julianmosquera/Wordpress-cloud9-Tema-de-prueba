@@ -2,13 +2,26 @@
 <html>
    
 <body>
-   
-
+   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri ();?>"/>
+ 
+<div id="cabezera">  
 <?php get_header(); ?>
+</div> 
+
+<div id="menuzito">
+<h1>Menu</h1>
+       <?php wp_nav_menu(
+           array(
+            'menu' => 'menu2'
+        )
+        ); ?>
+
+</div>
 
 
-
+<div id="entradas">
 <h1>Entradas</h1>
+
 <?php 
 
 
@@ -20,27 +33,26 @@ if (have_posts()) :
 endif;
 echo "Listo"
 ?>
+</div>
 
-<h4>Sidebar</h4>
+<div id="sidebar">
 <?php get_sidebar(); ?>
-</br
+</div>
 
 
 
-  <h1>Menu</h1>
-       <?php wp_nav_menu(
-           array(
-            'menu' => 'menu2'
-        )
-        ); ?>
+<div id="single">
 
 <h2 id="post-<?php the_ID(); ?>">
 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
 <?php the_title(); ?></a></h2>
 <small><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></small>
+</div>
 
-
-
+<div id="abajo">
 <?php get_footer(); ?>
+</div>
+
+
 </body>
 </html>
