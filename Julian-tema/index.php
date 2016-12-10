@@ -3,13 +3,14 @@
    
 <body>
    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri ();?>"/>
- 
+   
+<div id="intro">
 <div id="cabezera">  
 <?php get_header(); ?>
 </div> 
 
 <div id="menuzito">
-<h1>Menu</h1>
+
        <?php wp_nav_menu(
            array(
             'menu' => 'menu2'
@@ -18,9 +19,14 @@
 
 </div>
 
+</div>
+
+
+
+
 
 <div id="entradas">
-<h1>Entradas</h1>
+<h1>Entradas en el Blog:</h1>
 
 <?php 
 
@@ -40,6 +46,8 @@ echo "Listo"
 </div>
 
 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <div id="single">
 
