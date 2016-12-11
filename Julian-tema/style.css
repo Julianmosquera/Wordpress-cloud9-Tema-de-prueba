@@ -12,8 +12,13 @@ Esto es un comentario general.
 
 body {
     background-color: none;
+    background: url("http://digitalart.io/wp-content/uploads/2014/04/8Bit-Europe-featured.jpg") ;
+  
      
 }
+
+
+
 
 
 #intro{
@@ -28,10 +33,13 @@ body {
     font-size: larger;
     color:black;
     font-style:black;
-     border-top: 8px solid red;
+ border-top: 8px solid red;
   border-right: 5px solid red;
   border-bottom: 8px solid red;
   border-left: 5px solid red;
+  font: italic normal 230% 'Times New Roman', Times, serif;
+ 
+ 
    
     
 }
@@ -42,7 +50,7 @@ body {
     color: red;
     text-align: center;
     width:100%;
-    background-color:#A4A4A4;
+    background-color:none;
     
     
 }
@@ -86,6 +94,8 @@ body {
   border-right-style: double;
   border-bottom-style: dotted;
   border-left-style: solid;
+  
+
    
 }
 
